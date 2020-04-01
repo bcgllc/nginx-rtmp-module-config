@@ -34,10 +34,6 @@ echo 'Install stunnel4'
 apt --assume-yes install stunnel4
 mkdir /etc/stunnel/conf.d
 
-echo 'Extract zip files'
-
-unzip -j rtmp-module-config.zip
-
 echo 'Copy files'
 
 mkdir /etc/nginx/conf
@@ -63,5 +59,6 @@ systemctl status nginx
 
 echo 'Done'
 echo ''
-echo 'TODO: update stream URLs and stream keys and rename /etc/nginx/conf/rtmp/nginx_burris_rtmp.conf'
-
+echo 'TODO: update stream URLs and stream keys and rename /etc/nginx/conf/rtmp/nginx_customer_rtmp.conf'
+echo 'Afterwards, start nginx with the following command'
+echo 'systemctl start nginx'
